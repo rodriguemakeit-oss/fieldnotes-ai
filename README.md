@@ -1,27 +1,21 @@
 # Fieldnotes AI
 
-Azure Functions pour rechercher et synthétiser des retours d’expérience.
+Azure Functions examples for searching and summarizing a knowledge base using language-model services.
 
-Version de portfolio maintenue sur [rodriguemakeit-oss](https://github.com/rodriguemakeit-oss).
+## What it demonstrates
 
-## Ce que le projet explore
+- Independently deployable function applications
+- Retrieval-based synthesis over a configured knowledge source
+- Environment-based configuration for service endpoints and credentials
 
-Azure Functions pour rechercher et synthétiser des retours d’expérience. L’accent est mis sur la séparation des composants, la configuration explicite et la réutilisation des traitements.
+## Repository map
 
-## Structure
+The two function applications live under `src/func-002/` and `src/func-003/`. Each has its own dependencies and startup instructions.
 
-`src/func-002/function_app.py · src/func-003/function_app.py`
+## Run locally
 
-## Prise en main
+See [GUIDE.md](GUIDE.md). You will need Azure Functions Core Tools and your own search index, model endpoint, and credentials. No knowledge corpus or hosted deployment is included.
 
-Consultez [GUIDE.md](GUIDE.md) pour les commandes et la configuration détaillées.
+## Scope
 
-Les valeurs de déploiement sont des exemples. Les identifiants nuls et les domaines `example.invalid` doivent être remplacés dans votre propre environnement. Aucun déploiement cloud n’est lancé automatiquement.
-
-## État du projet
-
-Cette adaptation nécessite vos propres services et jeux de données. Les contrôles locaux sont décrits dans [VALIDATION.md](VALIDATION.md) ; ils ne constituent pas une validation des intégrations cloud.
-
-## Contributions et licences
-
-Les noms de packages, crédits d’auteurs et avis tiers conservés dans les sources s’appliquent à leurs composants respectifs. Aucune licence globale supplémentaire n’est attribuée à ce dépôt.
+This portfolio adaptation uses example settings and requires validation against your own services and data. See [VALIDATION.md](VALIDATION.md) for the checks performed and their limits.
